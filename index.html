@@ -5,13 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sign Up Form</title>
-    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./output.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
+    <script src="./app.js"></script>
   </head>
   <body>
     <div class="container">
@@ -31,11 +32,39 @@
         </div>
         <div class="form round-corners container-shadow">
           <form>
-            <input type="text" name="first-name" placeholder="First Name" />
-            <input type="text" name="last-name" placeholder="Last Name" />
-            <input type="text" name="email" placeholder="Email Address" />
-            <input type="text" name="password" placeholder="Password" />
-            <input type="button" value="CLAIM YOUR FREE TRIAL" />
+            <input
+              id="first-name"
+              type="text"
+              name="first-name"
+              placeholder="First Name"
+              value=""
+            />
+            <input
+              id="last-name"
+              type="text"
+              name="last-name"
+              placeholder="Last Name"
+              value=""
+            />
+            <input
+              id="email"
+              type="text"
+              name="email"
+              placeholder="Email Address"
+              value=""
+            />
+            <input
+              id="password"
+              type="text"
+              name="password"
+              placeholder="Password"
+              value=""
+            />
+            <input
+              type="button"
+              value="CLAIM YOUR FREE TRIAL"
+              onclick="onSubmit()"
+            />
           </form>
           <p class="terms">
             By clicking the button you are agreeing to our
